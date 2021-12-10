@@ -10,6 +10,7 @@
 		C63B87CA2751E9D100995B79 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C63B87C92751E9D100995B79 /* main.c */; };
 		C63B87D22751EA0E00995B79 /* hello_world.c in Sources */ = {isa = PBXBuildFile; fileRef = C63B87D12751EA0E00995B79 /* hello_world.c */; };
 		C63B87D72751F8D700995B79 /* data_types.c in Sources */ = {isa = PBXBuildFile; fileRef = C63B87D62751F8D700995B79 /* data_types.c */; };
+		C63B87DB275283ED00995B79 /* operators.c in Sources */ = {isa = PBXBuildFile; fileRef = C63B87DA275283ED00995B79 /* operators.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		C63B87D12751EA0E00995B79 /* hello_world.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hello_world.c; sourceTree = "<group>"; };
 		C63B87D52751F8D700995B79 /* data_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = data_types.h; sourceTree = "<group>"; };
 		C63B87D62751F8D700995B79 /* data_types.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = data_types.c; sourceTree = "<group>"; };
+		C63B87D9275283ED00995B79 /* operators.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = operators.h; sourceTree = "<group>"; };
+		C63B87DA275283ED00995B79 /* operators.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = operators.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,7 @@
 				C63B87C92751E9D100995B79 /* main.c */,
 				C63B87D32751EB2400995B79 /* hello_world */,
 				C63B87D42751F8BB00995B79 /* data_types */,
+				C63B87D8275283C400995B79 /* operators */,
 			);
 			path = CCode;
 			sourceTree = "<group>";
@@ -86,6 +90,15 @@
 				C63B87D62751F8D700995B79 /* data_types.c */,
 			);
 			path = data_types;
+			sourceTree = "<group>";
+		};
+		C63B87D8275283C400995B79 /* operators */ = {
+			isa = PBXGroup;
+			children = (
+				C63B87D9275283ED00995B79 /* operators.h */,
+				C63B87DA275283ED00995B79 /* operators.c */,
+			);
+			path = operators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +161,7 @@
 				C63B87CA2751E9D100995B79 /* main.c in Sources */,
 				C63B87D72751F8D700995B79 /* data_types.c in Sources */,
 				C63B87D22751EA0E00995B79 /* hello_world.c in Sources */,
+				C63B87DB275283ED00995B79 /* operators.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
