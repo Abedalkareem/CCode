@@ -6,7 +6,7 @@
 //
 
 #include <stdio.h>
-#include "cast_and_sizeof/cast_and_sizeof.h"
+#include "control_flow/control_flow.h"
 
 int main(int argc, const char * argv[]) { // arguments count, arguments vector.
   printf("Number of arguments %i \n", argc);
@@ -14,6 +14,6 @@ int main(int argc, const char * argv[]) { // arguments count, arguments vector.
     printf("Argument %i %s \n", i, argv[i]);
   }
 
-  sizeOf();
+  loop();
   return 0;
 }
