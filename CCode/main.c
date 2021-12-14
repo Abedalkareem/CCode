@@ -6,7 +6,7 @@
 //
 
 #include <stdio.h>
-#include "control_flow/control_flow.h"
+#include "arrays/arrays.h"
 
 int main(int argc, const char * argv[]) { // arguments count, arguments vector.
   printf("Number of arguments %i \n", argc);
@@ -14,6 +14,6 @@ int main(int argc, const char * argv[]) { // arguments count, arguments vector.
     printf("Argument %i %s \n", i, argv[i]);
   }
 
-  loop();
+  arrays();
   return 0;
 }
