@@ -14,6 +14,7 @@
 		C69389092763AED900E49957 /* cast_and_sizeof.c in Sources */ = {isa = PBXBuildFile; fileRef = C69389082763AED900E49957 /* cast_and_sizeof.c */; };
 		C693890D2764A0DC00E49957 /* control_flow.c in Sources */ = {isa = PBXBuildFile; fileRef = C693890C2764A0DC00E49957 /* control_flow.c */; };
 		C69389112764F4CC00E49957 /* arrays.c in Sources */ = {isa = PBXBuildFile; fileRef = C69389102764F4CC00E49957 /* arrays.c */; };
+		C6A81F0427702AFB005A0BE3 /* strings.c in Sources */ = {isa = PBXBuildFile; fileRef = C6A81F0327702AFB005A0BE3 /* strings.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,8 @@
 		C693890C2764A0DC00E49957 /* control_flow.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = control_flow.c; sourceTree = "<group>"; };
 		C693890F2764F4CC00E49957 /* arrays.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arrays.h; sourceTree = "<group>"; };
 		C69389102764F4CC00E49957 /* arrays.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = arrays.c; sourceTree = "<group>"; };
+		C6A81F0227702AFB005A0BE3 /* strings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = strings.h; sourceTree = "<group>"; };
+		C6A81F0327702AFB005A0BE3 /* strings.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = strings.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 				C69389062763AEA200E49957 /* cast_and_sizeof */,
 				C693890A2764A09E00E49957 /* control_flow */,
 				C693890E2764F4AF00E49957 /* arrays */,
+				C6A81F0127702AE3005A0BE3 /* strings */,
 				C63B87D8275283C400995B79 /* operators */,
 			);
 			path = CCode;
@@ -138,6 +142,15 @@
 				C69389102764F4CC00E49957 /* arrays.c */,
 			);
 			path = arrays;
+			sourceTree = "<group>";
+		};
+		C6A81F0127702AE3005A0BE3 /* strings */ = {
+			isa = PBXGroup;
+			children = (
+				C6A81F0227702AFB005A0BE3 /* strings.h */,
+				C6A81F0327702AFB005A0BE3 /* strings.c */,
+			);
+			path = strings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +214,7 @@
 				C63B87D72751F8D700995B79 /* data_types.c in Sources */,
 				C69389092763AED900E49957 /* cast_and_sizeof.c in Sources */,
 				C63B87D22751EA0E00995B79 /* hello_world.c in Sources */,
+				C6A81F0427702AFB005A0BE3 /* strings.c in Sources */,
 				C63B87DB275283ED00995B79 /* operators.c in Sources */,
 				C69389112764F4CC00E49957 /* arrays.c in Sources */,
 				C693890D2764A0DC00E49957 /* control_flow.c in Sources */,
