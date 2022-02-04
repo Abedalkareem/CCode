@@ -125,7 +125,7 @@ void useit(void) {
 
 }
 
-void doSomething(struct date someDate) {
+void doSomethingX(struct date someDate) {
   printf("%i \n", someDate.day);
 }
 

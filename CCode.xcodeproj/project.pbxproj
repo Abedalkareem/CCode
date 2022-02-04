@@ -18,6 +18,7 @@
 		C69389112764F4CC00E49957 /* arrays.c in Sources */ = {isa = PBXBuildFile; fileRef = C69389102764F4CC00E49957 /* arrays.c */; };
 		C6A815FD2786923B002FE09E /* pointers.c in Sources */ = {isa = PBXBuildFile; fileRef = C6A815FC2786923B002FE09E /* pointers.c */; };
 		C6A81F0427702AFB005A0BE3 /* strings.c in Sources */ = {isa = PBXBuildFile; fileRef = C6A81F0327702AFB005A0BE3 /* strings.c */; };
+		C6BA604D27A84DF50079D8E9 /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = C6BA604C27A84DF50079D8E9 /* io.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +56,8 @@
 		C6A815FC2786923B002FE09E /* pointers.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pointers.c; sourceTree = "<group>"; };
 		C6A81F0227702AFB005A0BE3 /* strings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = strings.h; sourceTree = "<group>"; };
 		C6A81F0327702AFB005A0BE3 /* strings.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = strings.c; sourceTree = "<group>"; };
+		C6BA604B27A84DF50079D8E9 /* io.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = io.h; sourceTree = "<group>"; };
+		C6BA604C27A84DF50079D8E9 /* io.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = io.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,7 @@
 				C6A815FA27869215002FE09E /* pointers */,
 				C6516A3D279F9FEF008511D6 /* dma */,
 				C6516A4127A0F8E8008511D6 /* structures */,
+				C6BA604A27A84DD70079D8E9 /* io */,
 				C63B87D8275283C400995B79 /* operators */,
 			);
 			path = CCode;
@@ -192,6 +196,15 @@
 			path = strings;
 			sourceTree = "<group>";
 		};
+		C6BA604A27A84DD70079D8E9 /* io */ = {
+			isa = PBXGroup;
+			children = (
+				C6BA604B27A84DF50079D8E9 /* io.h */,
+				C6BA604C27A84DF50079D8E9 /* io.c */,
+			);
+			path = io;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -250,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6A815FD2786923B002FE09E /* pointers.c in Sources */,
+				C6BA604D27A84DF50079D8E9 /* io.c in Sources */,
 				C63B87CA2751E9D100995B79 /* main.c in Sources */,
 				C63B87D72751F8D700995B79 /* data_types.c in Sources */,
 				C6516A4427A0F904008511D6 /* structures.c in Sources */,
