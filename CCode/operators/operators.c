@@ -30,6 +30,6 @@ void bitwise(void) {
   printf("a ^ b %u \n", a ^ b); // 0011 0001
   printf("~a %u \n", ~a); // 1100 0011
   printf("a<<2 %u \n", a<<2); // 1111 0000
-  printf("a<<2 %u \n", a>>2); // 0000 1100
+  printf("a>>2 %u \n", a>>2); // 0000 1111
 }
 

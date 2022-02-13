@@ -70,7 +70,8 @@ void goTo(void) {
   goto table;
 }
 
-void loop(void) {
+void loops(void) {
+  // for
   for (int i = 0; i <= 10; i++) {
     printf("%i \n", i);
   }
@@ -82,12 +83,14 @@ void loop(void) {
   // for (;;)
   // printf("Oh!");
 
+  // do while
   int r = 0;
   do {
     r++;
     printf("r: %i \n", r);
   } while (r != 10);
 
+  // while
   int y;
   printf("\nEnter a number:");
   while (scanf("%i", &y)) {

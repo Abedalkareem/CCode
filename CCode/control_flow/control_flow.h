@@ -12,5 +12,5 @@
 
 void controlFlow(void);
 void goTo(void);
-void loop(void);
+void loops(void);
 #endif /* control_flow_h */

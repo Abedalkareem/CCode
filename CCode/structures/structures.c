@@ -30,9 +30,12 @@ void useit(void) {
   today.year = 2010;
 
   struct date tomorrow = {2010, 12, 16};
+  printf("tomorrow.day: %i", tomorrow.day);
   struct date tdatomorrow = {2010, 12}; // year and month.
+  printf("tdatomorrow.day: %i", tdatomorrow.day);
   struct date afterMonth = {.year = 2010, .month = 1, .day = 15};
   struct date nextYear = {.year = 2011}; // year
+  printf("nextYear.day: %i", nextYear.day);
 
   // compound literals:
   today = (struct date) {2010, 12, 16};
@@ -59,6 +62,9 @@ void useit(void) {
   struct date newDates[3] = { {5, 12, 2015}, {6, 12, 2015}, {7, 12, 2015} };
   struct date newDates2[3] = { [2] = {5, 12, 2015}}; // just the thired one.
   struct date newDates3[3] = { [1].day = 1, [1].month = 12, [1].year = 2015};
+  printf("newDates.day: %i \n", newDates[0].day);
+  printf("newDates2.day: %i \n", newDates2[0].day);
+  printf("newDates3.day: %i \n", newDates3[0].day);
 
   struct newdate {
     int numberOfDays;
@@ -66,6 +72,7 @@ void useit(void) {
   };
 
   struct newdate myMonth = {5, {'f', 'f', 'f'}};
+  printf("myMonth.name[0]: %c \n", myMonth.name[0]);
   struct newdate myMonth2 = {5, "fff"};
   printf("%s \n", myMonth2.name); // will print 5.
 
@@ -79,7 +86,9 @@ void useit(void) {
   event.currentTime.hour = 3;
 
   struct timeAndDate newEvent = {{5, 10, 2020}, {3, 30}}; // month, time
-  struct timeAndDate newEvent2 = {{5, 10, 2020}, {.minutes = 3, .minutes = 30}}; // month, time
+  printf("newEvent.currentTime.hour: %i \n", newEvent.currentTime.hour);
+  struct timeAndDate newEvent2 = {{5, 10, 2020}, {.hour = 3, .minutes = 30}}; // month, time
+  printf("newEvent2.currentTime.hour: %i \n", newEvent2.currentTime.hour);
 
   // nested structures
   struct datex {

@@ -36,6 +36,7 @@ void doThings(void) {
 
   // calloc
   int *count = (int*) calloc(75, sizeof(int)); // 75 ints, and the size is int.
+  printf("%i", *count);
   // calloca offers a couple of advantages over malloc,
   // - it allocates memory as a number of elements of a given size.
   // - it initializes the memory that is allocated so that all bytes are zero.

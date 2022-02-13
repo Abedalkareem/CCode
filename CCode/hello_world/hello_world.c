@@ -7,6 +7,6 @@
 
 #include "hello_world.h"
 
-void helloworld(void) {
+void printHelloWorld(void) {
   printf("hello world \n");
 }

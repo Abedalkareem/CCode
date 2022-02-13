@@ -90,7 +90,6 @@
 		C63B87C82751E9D100995B79 /* CCode */ = {
 			isa = PBXGroup;
 			children = (
-				C63B87C92751E9D100995B79 /* main.c */,
 				C63B87D32751EB2400995B79 /* hello_world */,
 				C63B87D42751F8BB00995B79 /* data_types */,
 				C69389062763AEA200E49957 /* cast_and_sizeof */,
@@ -102,6 +101,7 @@
 				C6516A4127A0F8E8008511D6 /* structures */,
 				C6BA604A27A84DD70079D8E9 /* io */,
 				C63B87D8275283C400995B79 /* operators */,
+				C63B87C92751E9D100995B79 /* main.c */,
 			);
 			path = CCode;
 			sourceTree = "<group>";

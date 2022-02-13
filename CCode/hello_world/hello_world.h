@@ -10,6 +10,6 @@
 
 #include <stdio.h>
 
-void helloworld(void);
+void printHelloWorld(void);
 
 #endif /* hello_world_h */

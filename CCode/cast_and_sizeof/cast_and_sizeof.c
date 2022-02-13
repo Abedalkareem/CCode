@@ -17,7 +17,7 @@ void castNumbers(void) {
   printf("20 / 14.0 %d \n", (int) 20.5 / (int) 14.5); // 1, type cast operator has a higher precedence.
 }
 
-void sizeOf(void) {
+void sizeOfOperator(void) {
   // sizeof is an operator.
   // evaluated at compile time and not run time, unless a variable length array is used as an argument.
   printf("sizeof(int) %lu \n", sizeof(int));

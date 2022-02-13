@@ -14,9 +14,9 @@ void arrays(void) {
   printf("%i \n", numbers[0]);
 
   printf("Enter 8 numbers: \n");
-//  for(int i = 1; i <= 9; i++) {
-//    scanf("%i", &numbers[i]);
-//  }
+  for(int i = 1; i <= 9; i++) {
+    scanf("%i", &numbers[i]);
+  }
 
   printf("Items: \n");
   int items[] = {10, 5, 6, 2, 1};
@@ -45,6 +45,7 @@ void twoDimensionalArray(void) {
     {11, 21, 31, 41},
     {12, 22, 32, 42}
   };
+  printf("numbers[0][1]: %i \n", numbers[0][1]);
 
   int moreNumbers[4][5] = {
     {10, 20, 30}, // 10, 20, 30, 0, 0
@@ -52,6 +53,8 @@ void twoDimensionalArray(void) {
     {12, 22, 32}, // 12, 22, 32, 0, 0
     {13, 23, 33} // 13, 23, 33, 0, 0
   };
+  printf("moreNumbers[0][4]: %i \n", moreNumbers[0][4]);
 
   int matrix[4][3] = { [0][0] = 1, [1][1] = 5, [2][2] = 9 };
+  printf("matrix[0][0]: %i \n", matrix[0][0]);
 }

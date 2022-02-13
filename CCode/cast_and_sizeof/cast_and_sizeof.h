@@ -11,5 +11,5 @@
 #include <stdio.h>
 
 void castNumbers(void);
-void sizeOf(void);
+void sizeOfOperator(void);
 #endif /* cast_and_sizeof_h */

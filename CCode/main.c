@@ -6,14 +6,11 @@
 //
 
 #include <stdio.h>
-#include "io/io.h"
 
 int main(int argc, const char * argv[]) { // arguments count, arguments vector.
   printf("Number of arguments %i \n", argc);
   for(int i = 0; i < argc; i ++) {
     printf("Argument %i %s \n", i, argv[i]);
   }
-
-  letsStart();
   return 0;
 }
