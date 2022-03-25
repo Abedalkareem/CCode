@@ -23,6 +23,8 @@ struct time {
   int minutes;
 };
 
+
+
 void useit(void) {
   struct date today;
   today.day = 15;
@@ -34,6 +36,7 @@ void useit(void) {
   struct date tdatomorrow = {2010, 12}; // year and month.
   printf("tdatomorrow.day: %i", tdatomorrow.day);
   struct date afterMonth = {.year = 2010, .month = 1, .day = 15};
+//  struct date afterMonth2 = {year: 2010, month: 1, day: 15}; you can do also.
   struct date nextYear = {.year = 2011}; // year
   printf("nextYear.day: %i", nextYear.day);
 

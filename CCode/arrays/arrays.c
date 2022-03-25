@@ -7,6 +7,13 @@
 
 #include "arrays.h"
 #define DAYS 7
+#include <stdlib.h>
+
+int sum(int, int, int array[*][*]);
+
+int sum(int x, int y, int array[x][y]) {
+  return 0;
+}
 
 void arrays(void) {
   int numbers[10];
@@ -30,7 +37,11 @@ void arrays(void) {
 
   printf("Data: \n");
   int data[10] = {[9] = 9, [5] = 5, [6] = 6, [2] = 2, [1] = 1}; // [0, 1, 2, 0, 0, 5, 6, 0, 0, 9]
+  // you can do also: {[9]9, [5]5, [6]6, [2]2, [1]1}
   printf("%i \n", data[9]);
+
+  int xxx[50] = {[0] = 1, [1 ... 49] = 10};
+  printf("%i \n", xxx[49]);
 
   printf("Days: \n");
   int days[DAYS] = {1, 2, 3, 4, 5, 6, 7};
@@ -58,3 +69,21 @@ void twoDimensionalArray(void) {
   int matrix[4][3] = { [0][0] = 1, [1][1] = 5, [2][2] = 9 };
   printf("matrix[0][0]: %i \n", matrix[0][0]);
 }
+
+
+// int array[] : flexible array members.
+
+struct s {
+  int arraySize;
+  int array[]; // must be at the end.
+};
+
+void flexibleArrayMembers(void) {
+  int size = 10;
+  struct s *ptr;
+
+  ptr = malloc(sizeof(struct s) + size * sizeof(int));
+
+}
+
+

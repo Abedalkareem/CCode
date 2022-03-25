@@ -20,6 +20,8 @@
 		C6A81F0427702AFB005A0BE3 /* strings.c in Sources */ = {isa = PBXBuildFile; fileRef = C6A81F0327702AFB005A0BE3 /* strings.c */; };
 		C6B8AB1B27E953AA00AE68BA /* storage_classes.c in Sources */ = {isa = PBXBuildFile; fileRef = C6B8AB1A27E953AA00AE68BA /* storage_classes.c */; };
 		C6B8AB1E27E95B5300AE68BA /* storage_classes_test.c in Sources */ = {isa = PBXBuildFile; fileRef = C6B8AB1D27E95B5300AE68BA /* storage_classes_test.c */; };
+		C6B8AB2227EAC61900AE68BA /* define.c in Sources */ = {isa = PBXBuildFile; fileRef = C6B8AB2127EAC61800AE68BA /* define.c */; };
+		C6B8AB2627EAC96200AE68BA /* typedef.c in Sources */ = {isa = PBXBuildFile; fileRef = C6B8AB2527EAC96200AE68BA /* typedef.c */; };
 		C6BA604D27A84DF50079D8E9 /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = C6BA604C27A84DF50079D8E9 /* io.c */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,10 @@
 		C6B8AB1A27E953AA00AE68BA /* storage_classes.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = storage_classes.c; sourceTree = "<group>"; };
 		C6B8AB1C27E95B5300AE68BA /* storage_classes_test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = storage_classes_test.h; sourceTree = "<group>"; };
 		C6B8AB1D27E95B5300AE68BA /* storage_classes_test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = storage_classes_test.c; sourceTree = "<group>"; };
+		C6B8AB2027EAC61800AE68BA /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
+		C6B8AB2127EAC61800AE68BA /* define.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = define.c; sourceTree = "<group>"; };
+		C6B8AB2427EAC96200AE68BA /* typedef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = typedef.h; sourceTree = "<group>"; };
+		C6B8AB2527EAC96200AE68BA /* typedef.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = typedef.c; sourceTree = "<group>"; };
 		C6BA604B27A84DF50079D8E9 /* io.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = io.h; sourceTree = "<group>"; };
 		C6BA604C27A84DF50079D8E9 /* io.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = io.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +117,8 @@
 		C63B87C82751E9D100995B79 /* CCode */ = {
 			isa = PBXGroup;
 			children = (
+				C6B8AB2327EAC93F00AE68BA /* typedef */,
+				C6B8AB1F27EAC60100AE68BA /* define */,
 				C6B8AB1827E9539500AE68BA /* storage_classes */,
 				C63A1CD327D1C62800E72977 /* problems */,
 				C63B87D32751EB2400995B79 /* hello_world */,
@@ -230,6 +238,24 @@
 			path = storage_classes;
 			sourceTree = "<group>";
 		};
+		C6B8AB1F27EAC60100AE68BA /* define */ = {
+			isa = PBXGroup;
+			children = (
+				C6B8AB2027EAC61800AE68BA /* define.h */,
+				C6B8AB2127EAC61800AE68BA /* define.c */,
+			);
+			path = define;
+			sourceTree = "<group>";
+		};
+		C6B8AB2327EAC93F00AE68BA /* typedef */ = {
+			isa = PBXGroup;
+			children = (
+				C6B8AB2427EAC96200AE68BA /* typedef.h */,
+				C6B8AB2527EAC96200AE68BA /* typedef.c */,
+			);
+			path = typedef;
+			sourceTree = "<group>";
+		};
 		C6BA604A27A84DD70079D8E9 /* io */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,8 +330,10 @@
 				C6B8AB1B27E953AA00AE68BA /* storage_classes.c in Sources */,
 				C6516A4427A0F904008511D6 /* structures.c in Sources */,
 				C69389092763AED900E49957 /* cast_and_sizeof.c in Sources */,
+				C6B8AB2227EAC61900AE68BA /* define.c in Sources */,
 				C63B87D22751EA0E00995B79 /* hello_world.c in Sources */,
 				C6A81F0427702AFB005A0BE3 /* strings.c in Sources */,
+				C6B8AB2627EAC96200AE68BA /* typedef.c in Sources */,
 				C63B87DB275283ED00995B79 /* operators.c in Sources */,
 				C69389112764F4CC00E49957 /* arrays.c in Sources */,
 				C6516A40279FA008008511D6 /* dma.c in Sources */,
