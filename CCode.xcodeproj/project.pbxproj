@@ -25,6 +25,7 @@
 		C6B8AB2A27ED554E00AE68BA /* type_qualifiers.c in Sources */ = {isa = PBXBuildFile; fileRef = C6B8AB2927ED554E00AE68BA /* type_qualifiers.c */; };
 		C6B8AB3827F01B3A00AE68BA /* bit_manipulation.c in Sources */ = {isa = PBXBuildFile; fileRef = C6B8AB3727F01B3A00AE68BA /* bit_manipulation.c */; };
 		C6BA604D27A84DF50079D8E9 /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = C6BA604C27A84DF50079D8E9 /* io.c */; };
+		C6C31E8C280F9FB600032F64 /* functions.c in Sources */ = {isa = PBXBuildFile; fileRef = C6C31E8B280F9FB500032F64 /* functions.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -76,6 +77,8 @@
 		C6B8AB3727F01B3A00AE68BA /* bit_manipulation.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bit_manipulation.c; sourceTree = "<group>"; };
 		C6BA604B27A84DF50079D8E9 /* io.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = io.h; sourceTree = "<group>"; };
 		C6BA604C27A84DF50079D8E9 /* io.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = io.c; sourceTree = "<group>"; };
+		C6C31E8A280F9FB500032F64 /* functions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = functions.h; sourceTree = "<group>"; };
+		C6C31E8B280F9FB500032F64 /* functions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = functions.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,7 @@
 		C63B87C82751E9D100995B79 /* CCode */ = {
 			isa = PBXGroup;
 			children = (
+				C6C31E89280F9F8D00032F64 /* functions */,
 				C6B8AB3527F01B2200AE68BA /* bit_manipulation */,
 				C6B8AB2727ED552800AE68BA /* type_qualifiers */,
 				C6B8AB2327EAC93F00AE68BA /* typedef */,
@@ -291,6 +295,15 @@
 			path = io;
 			sourceTree = "<group>";
 		};
+		C6C31E89280F9F8D00032F64 /* functions */ = {
+			isa = PBXGroup;
+			children = (
+				C6C31E8A280F9FB500032F64 /* functions.h */,
+				C6C31E8B280F9FB500032F64 /* functions.c */,
+			);
+			path = functions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -350,6 +363,7 @@
 			files = (
 				C6A815FD2786923B002FE09E /* pointers.c in Sources */,
 				C6BA604D27A84DF50079D8E9 /* io.c in Sources */,
+				C6C31E8C280F9FB600032F64 /* functions.c in Sources */,
 				C63B87CA2751E9D100995B79 /* main.c in Sources */,
 				C63B87D72751F8D700995B79 /* data_types.c in Sources */,
 				C6B8AB1E27E95B5300AE68BA /* storage_classes_test.c in Sources */,
