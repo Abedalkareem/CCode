@@ -5,7 +5,12 @@
 //  Created by abedalkareem omreyh on 11/12/2021.
 //
 
+// setjmp() and longjmp() mainly used to implement exception handling in c (error recovery situations).
+// setjmp can be used like try.
+// longjmp can be used like throw.
+
 #include "control_flow.h"
+#include <setjmp.h>
 
 void controlFlow(void) {
   int x;
@@ -28,6 +33,29 @@ void controlFlow(void) {
 
 
   printf("%s \n", x < y ? "x < y" : "x >= y");
+
+  if (x < y)
+    printf("Hi!");
+   else
+     ; // null statement
+
+  // comma operator
+  while (x < 200)
+    (void)(y+= 50), ++x; // comma operator
+
+  int z = 1;
+
+  int j = ((void)(5), 3); // j = 3 (will take the write value)
+  printf("%i", j);
+
+  x = ((void)(y = 3), (z= ++y + 2) + 5);
+
+  for (x = 0, j = 0; x != 1000; x++, j-=10)
+    ;
+
+  (void)(printf("abedalkareem")), // comma operator
+  (void)(printf("fayyad")), // comma operator
+  printf("omreyh");
 }
 
 void switchControlFlow(void) {
@@ -95,5 +123,25 @@ void loops(void) {
   printf("\nEnter a number:");
   while (scanf("%i", &y)) {
     printf("It's %i \n", y);
+  }
+}
+
+jmp_buf buf;
+
+void functioon(void) {
+  printf("function");
+  longjmp(buf, 40);
+
+//  printf("will not reach here because longjmp");
+}
+
+void setjmplongjmp(void) {
+  int i = setjmp(buf);
+  printf("i=%i\n", i); // will print 40
+  if (i != 0) {
+    printf("back from functioon");
+  } else {
+    printf("first time");
+    functioon();
   }
 }
