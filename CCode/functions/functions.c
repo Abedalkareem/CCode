@@ -8,6 +8,11 @@
 #include "functions.h"
 #include <stdarg.h>
 #include <math.h>
+#include <stdnoreturn.h>
+#include <stdlib.h>
+
+// An inline function is one for which the compiler copies the code from the function definition directly into the code of the calling function rather than creating a separate set of instructions in memory. Instead of transferring control to and from the function code segment, a modified copy of the function body may be substituted directly for the function call. In this way, the performance overhead of a function call is avoided. Using the inline specifier is only a suggestion to the compiler that an inline expansion can be performed; the compiler is free to ignore the suggestion.
+// noreturn is a promise to the compiler that the function won't return. This allows optimizations, and is useful especially in cases where it's hard for the compiler to prove that a loop won't ever exit, or otherwise prove there's no path through a function that returns.
 
 // variadic function
 
@@ -68,4 +73,12 @@ double sample_stddev(int count, ...) {
   va_end(args2);
 
   return sqrt(sum_sq_diff / sum);
+}
+
+inline void doThatThing(void) {
+  printf("Hello!");
+}
+
+noreturn void willNotReturn(void) {
+  exit(0);
 }
