@@ -26,6 +26,7 @@
 		C6B8AB3827F01B3A00AE68BA /* bit_manipulation.c in Sources */ = {isa = PBXBuildFile; fileRef = C6B8AB3727F01B3A00AE68BA /* bit_manipulation.c */; };
 		C6BA604D27A84DF50079D8E9 /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = C6BA604C27A84DF50079D8E9 /* io.c */; };
 		C6C31E8C280F9FB600032F64 /* functions.c in Sources */ = {isa = PBXBuildFile; fileRef = C6C31E8B280F9FB500032F64 /* functions.c */; };
+		C6C31E902810F3E400032F64 /* union.c in Sources */ = {isa = PBXBuildFile; fileRef = C6C31E8F2810F3E400032F64 /* union.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -79,6 +80,8 @@
 		C6BA604C27A84DF50079D8E9 /* io.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = io.c; sourceTree = "<group>"; };
 		C6C31E8A280F9FB500032F64 /* functions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = functions.h; sourceTree = "<group>"; };
 		C6C31E8B280F9FB500032F64 /* functions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = functions.c; sourceTree = "<group>"; };
+		C6C31E8E2810F3E400032F64 /* union.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = union.h; sourceTree = "<group>"; };
+		C6C31E8F2810F3E400032F64 /* union.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = union.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,7 @@
 		C63B87C82751E9D100995B79 /* CCode */ = {
 			isa = PBXGroup;
 			children = (
+				C6C31E8D2810F3D100032F64 /* union */,
 				C6C31E89280F9F8D00032F64 /* functions */,
 				C6B8AB3527F01B2200AE68BA /* bit_manipulation */,
 				C6B8AB2727ED552800AE68BA /* type_qualifiers */,
@@ -304,6 +308,15 @@
 			path = functions;
 			sourceTree = "<group>";
 		};
+		C6C31E8D2810F3D100032F64 /* union */ = {
+			isa = PBXGroup;
+			children = (
+				C6C31E8E2810F3E400032F64 /* union.h */,
+				C6C31E8F2810F3E400032F64 /* union.c */,
+			);
+			path = union;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -374,6 +387,7 @@
 				C6B8AB2227EAC61900AE68BA /* define.c in Sources */,
 				C63B87D22751EA0E00995B79 /* hello_world.c in Sources */,
 				C6A81F0427702AFB005A0BE3 /* strings.c in Sources */,
+				C6C31E902810F3E400032F64 /* union.c in Sources */,
 				C6B8AB2A27ED554E00AE68BA /* type_qualifiers.c in Sources */,
 				C6B8AB2627EAC96200AE68BA /* typedef.c in Sources */,
 				C63B87DB275283ED00995B79 /* operators.c in Sources */,
