@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C61552172826AC78002BD68E /* core_files.c in Sources */ = {isa = PBXBuildFile; fileRef = C61552162826AC78002BD68E /* core_files.c */; };
+		C615521B2826B321002BD68E /* profiling.c in Sources */ = {isa = PBXBuildFile; fileRef = C615521A2826B321002BD68E /* profiling.c */; };
 		C63B87CA2751E9D100995B79 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C63B87C92751E9D100995B79 /* main.c */; };
 		C63B87D22751EA0E00995B79 /* hello_world.c in Sources */ = {isa = PBXBuildFile; fileRef = C63B87D12751EA0E00995B79 /* hello_world.c */; };
 		C63B87D72751F8D700995B79 /* data_types.c in Sources */ = {isa = PBXBuildFile; fileRef = C63B87D62751F8D700995B79 /* data_types.c */; };
@@ -49,6 +50,8 @@
 /* Begin PBXFileReference section */
 		C61552152826AC78002BD68E /* core_files.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = core_files.h; sourceTree = "<group>"; };
 		C61552162826AC78002BD68E /* core_files.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = core_files.c; sourceTree = "<group>"; };
+		C61552192826B321002BD68E /* profiling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = profiling.h; sourceTree = "<group>"; };
+		C615521A2826B321002BD68E /* profiling.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = profiling.c; sourceTree = "<group>"; };
 		C63B87C62751E9D100995B79 /* CCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63B87C92751E9D100995B79 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		C63B87D02751EA0E00995B79 /* hello_world.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hello_world.h; sourceTree = "<group>"; };
@@ -119,6 +122,15 @@
 			path = core_files;
 			sourceTree = "<group>";
 		};
+		C61552182826B308002BD68E /* profiling */ = {
+			isa = PBXGroup;
+			children = (
+				C61552192826B321002BD68E /* profiling.h */,
+				C615521A2826B321002BD68E /* profiling.c */,
+			);
+			path = profiling;
+			sourceTree = "<group>";
+		};
 		C63A1CD327D1C62800E72977 /* problems */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +165,7 @@
 		C63B87C82751E9D100995B79 /* CCode */ = {
 			isa = PBXGroup;
 			children = (
+				C61552182826B308002BD68E /* profiling */,
 				C61552142826AC60002BD68E /* core_files */,
 				C66A4D1328258DC000F2EE87 /* gdb */,
 				C66A4D0F28244AC200F2EE87 /* gcc */,
@@ -463,6 +476,7 @@
 				C63B87DB275283ED00995B79 /* operators.c in Sources */,
 				C69389112764F4CC00E49957 /* arrays.c in Sources */,
 				C6516A40279FA008008511D6 /* dma.c in Sources */,
+				C615521B2826B321002BD68E /* profiling.c in Sources */,
 				C693890D2764A0DC00E49957 /* control_flow.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
