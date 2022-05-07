@@ -7,7 +7,7 @@
 
 #include "profiling.h"
 
-// profiling is a form of dynamic program analysis that measures:
+// profiling (dynamic analysis) is a form of dynamic program analysis that measures:
 // - space (memory)
 // - time complexity off a program (efficiency)
 // - usage of particular instrctions
