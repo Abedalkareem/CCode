@@ -7,6 +7,7 @@
 
 #include "pointers.h"
 #include <stddef.h>
+#include <stdlib.h>
 
 //
 // &: The address of operator.
@@ -104,4 +105,65 @@ void doSomething(const char *param) {
 void doAnotherThing(int *const param) {
 //  param = 55; you can't change the value of what the pointer is poiting to.
     *param = 5; 
+}
+
+
+// double pointers
+
+//void foo(int *ptr) {
+//  int a = 5;
+//  ptr = &a;
+//}
+//
+//void mainx(void) {
+//  int *ptr = NULL;
+//  ptr = (int *) malloc(sizeof(int));
+//  *ptr = 10;
+//  foo(ptr);
+//
+//  printf("%d\n", *ptr); // value will be still 10.
+//}
+
+void foo(int **ptr) {
+  int a = 5;
+  *ptr = &a;
+}
+
+void mainx(void) {
+  int *ptr = NULL;
+  ptr = (int *) malloc(sizeof(int));
+  *ptr = 10;
+  foo(&ptr);
+
+  printf("%d\n", *ptr);
+}
+
+// function pointers.
+
+int lookup(int x) {
+  return 0;
+}
+
+typedef int (*Complition) (int);
+typedef int FunctionType(int);
+
+void functionsPointers(void) {
+  int (*pfunction) (int);
+  pfunction = lookup;
+  int x = pfunction(5);
+  printf("%i", x);
+
+  Complition xx;
+  xx = lookup;
+  int y = xx(5);
+  printf("%i", y);
+}
+
+// void pointer
+
+void voidpointer(void) {
+  void *vp; // absence of type
+  int a = 100;
+  vp = &a;
+  printf("%i", *(int *)vp);
 }
