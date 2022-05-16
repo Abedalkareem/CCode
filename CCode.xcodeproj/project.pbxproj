@@ -26,6 +26,7 @@
 		C69389112764F4CC00E49957 /* arrays.c in Sources */ = {isa = PBXBuildFile; fileRef = C69389102764F4CC00E49957 /* arrays.c */; };
 		C6A815FD2786923B002FE09E /* pointers.c in Sources */ = {isa = PBXBuildFile; fileRef = C6A815FC2786923B002FE09E /* pointers.c */; };
 		C6A81F0427702AFB005A0BE3 /* strings.c in Sources */ = {isa = PBXBuildFile; fileRef = C6A81F0327702AFB005A0BE3 /* strings.c */; };
+		C6B07FE2283239ED00B7DF85 /* tryassert.c in Sources */ = {isa = PBXBuildFile; fileRef = C6B07FE1283239ED00B7DF85 /* tryassert.c */; };
 		C6B8AB1B27E953AA00AE68BA /* storage_classes.c in Sources */ = {isa = PBXBuildFile; fileRef = C6B8AB1A27E953AA00AE68BA /* storage_classes.c */; };
 		C6B8AB1E27E95B5300AE68BA /* storage_classes_test.c in Sources */ = {isa = PBXBuildFile; fileRef = C6B8AB1D27E95B5300AE68BA /* storage_classes_test.c */; };
 		C6B8AB2227EAC61900AE68BA /* define.c in Sources */ = {isa = PBXBuildFile; fileRef = C6B8AB2127EAC61800AE68BA /* define.c */; };
@@ -88,6 +89,8 @@
 		C6A815FC2786923B002FE09E /* pointers.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pointers.c; sourceTree = "<group>"; };
 		C6A81F0227702AFB005A0BE3 /* strings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = strings.h; sourceTree = "<group>"; };
 		C6A81F0327702AFB005A0BE3 /* strings.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = strings.c; sourceTree = "<group>"; };
+		C6B07FE0283239ED00B7DF85 /* tryassert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tryassert.h; sourceTree = "<group>"; };
+		C6B07FE1283239ED00B7DF85 /* tryassert.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tryassert.c; sourceTree = "<group>"; };
 		C6B8AB1927E953AA00AE68BA /* storage_classes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = storage_classes.h; sourceTree = "<group>"; };
 		C6B8AB1A27E953AA00AE68BA /* storage_classes.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = storage_classes.c; sourceTree = "<group>"; };
 		C6B8AB1C27E95B5300AE68BA /* storage_classes_test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = storage_classes_test.h; sourceTree = "<group>"; };
@@ -189,6 +192,7 @@
 		C63B87C82751E9D100995B79 /* CCode */ = {
 			isa = PBXGroup;
 			children = (
+				C6B07FDF283239D400B7DF85 /* assert */,
 				C61552202828AEAE002BD68E /* libraries */,
 				C615521C2826D95D002BD68E /* static_analysis */,
 				C61552182826B308002BD68E /* profiling */,
@@ -347,6 +351,15 @@
 			path = strings;
 			sourceTree = "<group>";
 		};
+		C6B07FDF283239D400B7DF85 /* assert */ = {
+			isa = PBXGroup;
+			children = (
+				C6B07FE0283239ED00B7DF85 /* tryassert.h */,
+				C6B07FE1283239ED00B7DF85 /* tryassert.c */,
+			);
+			path = assert;
+			sourceTree = "<group>";
+		};
 		C6B8AB1827E9539500AE68BA /* storage_classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -496,6 +509,7 @@
 				C66A4D1228244ADC00F2EE87 /* gcc.c in Sources */,
 				C6C31E902810F3E400032F64 /* union.c in Sources */,
 				C61552232828AEC2002BD68E /* libraries.c in Sources */,
+				C6B07FE2283239ED00B7DF85 /* tryassert.c in Sources */,
 				C6B8AB2A27ED554E00AE68BA /* type_qualifiers.c in Sources */,
 				C66A4CEE28152B9D00F2EE87 /* preprocessor.c in Sources */,
 				C6B8AB2627EAC96200AE68BA /* typedef.c in Sources */,
