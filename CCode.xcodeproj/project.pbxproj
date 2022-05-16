@@ -10,6 +10,7 @@
 		C61552172826AC78002BD68E /* core_files.c in Sources */ = {isa = PBXBuildFile; fileRef = C61552162826AC78002BD68E /* core_files.c */; };
 		C615521B2826B321002BD68E /* profiling.c in Sources */ = {isa = PBXBuildFile; fileRef = C615521A2826B321002BD68E /* profiling.c */; };
 		C615521F2826D972002BD68E /* static_analysis.c in Sources */ = {isa = PBXBuildFile; fileRef = C615521E2826D972002BD68E /* static_analysis.c */; };
+		C61552232828AEC2002BD68E /* libraries.c in Sources */ = {isa = PBXBuildFile; fileRef = C61552222828AEC2002BD68E /* libraries.c */; };
 		C63B87CA2751E9D100995B79 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C63B87C92751E9D100995B79 /* main.c */; };
 		C63B87D22751EA0E00995B79 /* hello_world.c in Sources */ = {isa = PBXBuildFile; fileRef = C63B87D12751EA0E00995B79 /* hello_world.c */; };
 		C63B87D72751F8D700995B79 /* data_types.c in Sources */ = {isa = PBXBuildFile; fileRef = C63B87D62751F8D700995B79 /* data_types.c */; };
@@ -55,6 +56,8 @@
 		C615521A2826B321002BD68E /* profiling.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = profiling.c; sourceTree = "<group>"; };
 		C615521D2826D972002BD68E /* static_analysis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = static_analysis.h; sourceTree = "<group>"; };
 		C615521E2826D972002BD68E /* static_analysis.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = static_analysis.c; sourceTree = "<group>"; };
+		C61552212828AEC2002BD68E /* libraries.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libraries.h; sourceTree = "<group>"; };
+		C61552222828AEC2002BD68E /* libraries.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = libraries.c; sourceTree = "<group>"; };
 		C63B87C62751E9D100995B79 /* CCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63B87C92751E9D100995B79 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		C63B87D02751EA0E00995B79 /* hello_world.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hello_world.h; sourceTree = "<group>"; };
@@ -143,6 +146,15 @@
 			path = static_analysis;
 			sourceTree = "<group>";
 		};
+		C61552202828AEAE002BD68E /* libraries */ = {
+			isa = PBXGroup;
+			children = (
+				C61552212828AEC2002BD68E /* libraries.h */,
+				C61552222828AEC2002BD68E /* libraries.c */,
+			);
+			path = libraries;
+			sourceTree = "<group>";
+		};
 		C63A1CD327D1C62800E72977 /* problems */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +189,7 @@
 		C63B87C82751E9D100995B79 /* CCode */ = {
 			isa = PBXGroup;
 			children = (
+				C61552202828AEAE002BD68E /* libraries */,
 				C615521C2826D95D002BD68E /* static_analysis */,
 				C61552182826B308002BD68E /* profiling */,
 				C61552142826AC60002BD68E /* core_files */,
@@ -482,6 +495,7 @@
 				C6A81F0427702AFB005A0BE3 /* strings.c in Sources */,
 				C66A4D1228244ADC00F2EE87 /* gcc.c in Sources */,
 				C6C31E902810F3E400032F64 /* union.c in Sources */,
+				C61552232828AEC2002BD68E /* libraries.c in Sources */,
 				C6B8AB2A27ED554E00AE68BA /* type_qualifiers.c in Sources */,
 				C66A4CEE28152B9D00F2EE87 /* preprocessor.c in Sources */,
 				C6B8AB2627EAC96200AE68BA /* typedef.c in Sources */,
