@@ -8,6 +8,7 @@
 #include "usefulclibraries.h"
 #include <stdlib.h>
 #include <time.h>
+#include <unistd.h>
 #include <string.h>
 
 // exit()
@@ -170,3 +171,113 @@ void tryOthers(void) {
   printf("%s", dup2); // http
 }
 
+// time
+// clock() function returns amount of processor time used by the program.
+// time() function returns the number of seconds from an arbitrary epoch.
+// ctime() and asctime() retunre current date and day of time as function value.
+// gmtime() converts time value into Coordinated Universal Time (UTC).
+// localtime() returnes structure of type struct tm
+// can be passed as an argument to asctime() function.
+// asctime() and ctime() functions return current date and time of day.
+// the ctime() function mayb call asctime() to perform it's work
+//
+//
+
+// clock_t is a typedef of long int and is defined in the time.h header.
+// It is used to store the processor time in terms of the number of CPU cycles passed since the start of the process.
+// To convert the number of CPU clock cycles into seconds, we need to use the CLOCKS_PER_SEC constant, which is also defined in the time.h header.
+// The function clock() defined in the time.h header returns the number of elapsed CPU clock cycles.
+
+void tryTimes(void) {
+  clock_t start, end, duration;
+  start = clock();
+  
+  for(int i=0; i<6000000; i++){
+    printf("%i", 100);
+  }
+  end = clock();
+  
+  duration = (end - start);
+  
+  printf("Processor cycles taken : %f cycles\n", (float)duration);
+  printf("Processor time taken : %f seconds\n", (float)duration/CLOCKS_PER_SEC);
+  
+  
+  time_t start_t, end_t;
+  double diff_t;
+  
+  printf("Starting of the program...\n");
+  time(&start_t);
+  
+  printf("Sleeping for 5 seconds...\n");
+  sleep(5);
+  
+  time(&end_t);
+  diff_t = difftime(end_t, start_t);
+  
+  printf("Execution time = %f\n", diff_t);
+  
+  
+  // to get the today date as a astring using the ctime function
+  // char *ctime(const time_t *timer);
+  // accepts a pointer to a time_t variable as an argument that contains a calendar time value returned by the time() function
+  // returns a pointer to a 26-character string containing the day, the date, the time, and the year, which is termainated by a
+  // newline and '\0'.
+  //
+  
+  time_t calendar = time(NULL);
+  struct tm* time_data;
+  time_data = localtime(&calendar);
+  
+  printf("Today is %d, %d, %d", time_data->tm_wday,
+         time_data->tm_mon,
+         time_data->tm_year);
+  
+  // asctime generates a string representation of a tm structure
+  time_t time_ptr;
+  time(&time_ptr);
+  printf("%s", asctime(localtime(&time_ptr)));
+  
+  
+  // The C library function time_t mktime(struct tm *timeptr) converts the
+  // structure pointed to by timeptr into a time_t value according to the local time zone.
+  
+  time_t ret;
+  struct tm info;
+  char buffer[80];
+  
+  info.tm_year = 2001 - 1900;
+  info.tm_mon = 7 - 1;
+  info.tm_mday = 4;
+  info.tm_hour = 0;
+  info.tm_min = 0;
+  info.tm_sec = 1;
+  info.tm_isdst = -1;
+  
+  ret = mktime(&info);
+  if( ret == -1 ) {
+    printf("Error: unable to make time using mktime\n");
+  } else {
+    strftime(buffer, sizeof(buffer), "%c", &info );
+    printf("%s", buffer);
+  }
+  
+  // The C library function struct tm *gmtime(const time_t *timer)
+  // uses the value pointed by timer to fill a tm structure with the values that represent
+  // the corresponding time, expressed in Coordinated Universal Time (UTC) or GMT timezone.
+  
+  time_t rawtime;
+  struct tm *info2;
+  
+  time(&rawtime);
+  /* Get GMT time */
+  info2 = gmtime(&rawtime );
+  
+#define BST (+1)
+#define CCT (+8)
+  
+  printf("Current world clock:\n");
+  printf("London : %2d:%02d\n", (info2->tm_hour+BST)%24, info2->tm_min);
+  printf("China  : %2d:%02d\n", (info2->tm_hour+CCT)%24, info2->tm_min);
+  
+}
