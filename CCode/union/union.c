@@ -48,5 +48,5 @@ void tryUnion(void) {
   car2 = &car1;
   car2->i_value = 3;
 
-  union car car3 = {.i_value = 15};
+//  union car car3 = {.i_value = 15};
 }

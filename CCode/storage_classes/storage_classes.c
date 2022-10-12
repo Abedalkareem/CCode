@@ -57,6 +57,8 @@ void play(void) {
   printf("%i", playAgain()); // 2
   printf("%i", playAgain()); // 3
   printf("%i", playAgain()); // 4
+
+  playSomething();
 }
 
 int playAgain(void) {
