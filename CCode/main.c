@@ -13,7 +13,7 @@
 //
 
 #include <stdio.h>
-#include "linked_list.h"
+#include "stack.h"
 
 int main(int argc, const char * argv[]) { // arguments count, arguments vector.
   printf("Number of arguments %i \n", argc);
@@ -21,6 +21,5 @@ int main(int argc, const char * argv[]) { // arguments count, arguments vector.
     printf("Argument %i %s \n", i, argv[i]);
   }
 
-  linkedListTest();
   return 0;
 }
