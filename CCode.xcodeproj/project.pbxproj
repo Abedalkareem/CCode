@@ -40,6 +40,8 @@
 		C6BFB06A28F7A84C006B02C9 /* stack_array.c in Sources */ = {isa = PBXBuildFile; fileRef = C6BFB06928F7A84C006B02C9 /* stack_array.c */; };
 		C6BFB06E28F7AEDB006B02C9 /* queues.c in Sources */ = {isa = PBXBuildFile; fileRef = C6BFB06D28F7AEDB006B02C9 /* queues.c */; };
 		C6BFB07228FA5328006B02C9 /* tree.c in Sources */ = {isa = PBXBuildFile; fileRef = C6BFB07128FA5328006B02C9 /* tree.c */; };
+		C6BFB07728FABD14006B02C9 /* processes.c in Sources */ = {isa = PBXBuildFile; fileRef = C6BFB07628FABD14006B02C9 /* processes.c */; };
+		C6BFB09528FBB126006B02C9 /* signals.c in Sources */ = {isa = PBXBuildFile; fileRef = C6BFB09428FBB126006B02C9 /* signals.c */; };
 		C6C31E8C280F9FB600032F64 /* functions.c in Sources */ = {isa = PBXBuildFile; fileRef = C6C31E8B280F9FB500032F64 /* functions.c */; };
 		C6C31E902810F3E400032F64 /* union.c in Sources */ = {isa = PBXBuildFile; fileRef = C6C31E8F2810F3E400032F64 /* union.c */; };
 /* End PBXBuildFile section */
@@ -123,6 +125,10 @@
 		C6BFB06D28F7AEDB006B02C9 /* queues.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = queues.c; sourceTree = "<group>"; };
 		C6BFB07028FA5328006B02C9 /* tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tree.h; sourceTree = "<group>"; };
 		C6BFB07128FA5328006B02C9 /* tree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tree.c; sourceTree = "<group>"; };
+		C6BFB07528FABD14006B02C9 /* processes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = processes.h; sourceTree = "<group>"; };
+		C6BFB07628FABD14006B02C9 /* processes.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = processes.c; sourceTree = "<group>"; };
+		C6BFB09328FBB126006B02C9 /* signals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = signals.h; sourceTree = "<group>"; };
+		C6BFB09428FBB126006B02C9 /* signals.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = signals.c; sourceTree = "<group>"; };
 		C6C31E8A280F9FB500032F64 /* functions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = functions.h; sourceTree = "<group>"; };
 		C6C31E8B280F9FB500032F64 /* functions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = functions.c; sourceTree = "<group>"; };
 		C6C31E8E2810F3E400032F64 /* union.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = union.h; sourceTree = "<group>"; };
@@ -210,6 +216,7 @@
 		C63B87C82751E9D100995B79 /* CCode */ = {
 			isa = PBXGroup;
 			children = (
+				C6BFB07328FABB7C006B02C9 /* interproces */,
 				C6BFB05F28F30C1A006B02C9 /* data_structures */,
 				C6755C55283B20CE0051EDB3 /* usefulclibraries */,
 				C6B07FDF283239D400B7DF85 /* assert */,
@@ -494,6 +501,33 @@
 			path = tree;
 			sourceTree = "<group>";
 		};
+		C6BFB07328FABB7C006B02C9 /* interproces */ = {
+			isa = PBXGroup;
+			children = (
+				C6BFB09228FBB10D006B02C9 /* signals */,
+				C6BFB07428FABD04006B02C9 /* processes */,
+			);
+			path = interproces;
+			sourceTree = "<group>";
+		};
+		C6BFB07428FABD04006B02C9 /* processes */ = {
+			isa = PBXGroup;
+			children = (
+				C6BFB07528FABD14006B02C9 /* processes.h */,
+				C6BFB07628FABD14006B02C9 /* processes.c */,
+			);
+			path = processes;
+			sourceTree = "<group>";
+		};
+		C6BFB09228FBB10D006B02C9 /* signals */ = {
+			isa = PBXGroup;
+			children = (
+				C6BFB09328FBB126006B02C9 /* signals.h */,
+				C6BFB09428FBB126006B02C9 /* signals.c */,
+			);
+			path = signals;
+			sourceTree = "<group>";
+		};
 		C6C31E89280F9F8D00032F64 /* functions */ = {
 			isa = PBXGroup;
 			children = (
@@ -592,8 +626,10 @@
 				C66A4D1228244ADC00F2EE87 /* gcc.c in Sources */,
 				C6C31E902810F3E400032F64 /* union.c in Sources */,
 				C61552232828AEC2002BD68E /* libraries.c in Sources */,
+				C6BFB07728FABD14006B02C9 /* processes.c in Sources */,
 				C6B07FE2283239ED00B7DF85 /* tryassert.c in Sources */,
 				C6B8AB2A27ED554E00AE68BA /* type_qualifiers.c in Sources */,
+				C6BFB09528FBB126006B02C9 /* signals.c in Sources */,
 				C66A4CEE28152B9D00F2EE87 /* preprocessor.c in Sources */,
 				C6B8AB2627EAC96200AE68BA /* typedef.c in Sources */,
 				C61552172826AC78002BD68E /* core_files.c in Sources */,
