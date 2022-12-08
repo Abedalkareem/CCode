@@ -44,6 +44,7 @@
 		C6BFB09528FBB126006B02C9 /* signals.c in Sources */ = {isa = PBXBuildFile; fileRef = C6BFB09428FBB126006B02C9 /* signals.c */; };
 		C6C31E8C280F9FB600032F64 /* functions.c in Sources */ = {isa = PBXBuildFile; fileRef = C6C31E8B280F9FB500032F64 /* functions.c */; };
 		C6C31E902810F3E400032F64 /* union.c in Sources */ = {isa = PBXBuildFile; fileRef = C6C31E8F2810F3E400032F64 /* union.c */; };
+		C6EE29F7293E549D00A16604 /* threads.c in Sources */ = {isa = PBXBuildFile; fileRef = C6EE29F6293E549D00A16604 /* threads.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -133,6 +134,8 @@
 		C6C31E8B280F9FB500032F64 /* functions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = functions.c; sourceTree = "<group>"; };
 		C6C31E8E2810F3E400032F64 /* union.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = union.h; sourceTree = "<group>"; };
 		C6C31E8F2810F3E400032F64 /* union.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = union.c; sourceTree = "<group>"; };
+		C6EE29F5293E549D00A16604 /* threads.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = threads.h; sourceTree = "<group>"; };
+		C6EE29F6293E549D00A16604 /* threads.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = threads.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +219,7 @@
 		C63B87C82751E9D100995B79 /* CCode */ = {
 			isa = PBXGroup;
 			children = (
+				C6EE29F4293E548700A16604 /* threads */,
 				C6BFB07328FABB7C006B02C9 /* interproces */,
 				C6BFB05F28F30C1A006B02C9 /* data_structures */,
 				C6755C55283B20CE0051EDB3 /* usefulclibraries */,
@@ -546,6 +550,15 @@
 			path = union;
 			sourceTree = "<group>";
 		};
+		C6EE29F4293E548700A16604 /* threads */ = {
+			isa = PBXGroup;
+			children = (
+				C6EE29F5293E549D00A16604 /* threads.h */,
+				C6EE29F6293E549D00A16604 /* threads.c */,
+			);
+			path = threads;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -606,6 +619,7 @@
 				C6A815FD2786923B002FE09E /* pointers.c in Sources */,
 				C6BA604D27A84DF50079D8E9 /* io.c in Sources */,
 				C6C31E8C280F9FB600032F64 /* functions.c in Sources */,
+				C6EE29F7293E549D00A16604 /* threads.c in Sources */,
 				C66A4D1628258DD200F2EE87 /* gdb.c in Sources */,
 				C63B87CA2751E9D100995B79 /* main.c in Sources */,
 				C63B87D72751F8D700995B79 /* data_types.c in Sources */,

@@ -13,7 +13,7 @@
 //
 
 #include <stdio.h>
-#include "processes.h"
+#include "threads.h"
 
 int main(int argc, const char * argv[]) { // arguments count, arguments vector.
   printf("Number of arguments %i \n", argc);
@@ -21,7 +21,7 @@ int main(int argc, const char * argv[]) { // arguments count, arguments vector.
     printf("Argument %i %s \n", i, argv[i]);
   }
 
-  testProcesses();
+  testThreads();
 
   return 0;
 }
